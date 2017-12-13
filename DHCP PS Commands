@@ -1,0 +1,12 @@
+#---Remove a DHCP SCOPE---#
+Remove-DhcpServerv4Scope -ComputerName <DHCP SERVERNAME> -ScopeId <SCOPE IP> -Force
+
+#---Creates a DHCP Reservation Remotely---#
+Invoke-command -computername <DHCP SERVERNAME> -scriptblock {Add-DhcpServerv4Reservation -ScopeId <SCOPE IP>-IPAddress <COMPUTER IP> -ClientId <MAC ADDRESS> -Description <DESSCRIPTION> -Name "COMPUTERNAME"}
+Invoke-command -computername <DHCP SERVERNAME> -scriptblock {Add-DhcpServerv4Reservation -ScopeId <SCOPE IP>-IPAddress <COMPUTER IP> -ClientId <MAC ADDRESS> -Description <DESSCRIPTION> -Name "COMPUTERNAME"}
+Invoke-command -computername <DHCP SERVERNAME> -scriptblock {Add-DhcpServerv4Reservation -ScopeId <SCOPE IP>-IPAddress <COMPUTER IP> -ClientId <MAC ADDRESS> -Description <DESSCRIPTION> -Name "COMPUTERNAME"}
+
+#---Creates a DHCP Reservation Locally---#
+Add-DhcpServerv4Reservation -ScopeId <SCOPE IP>-IPAddress <COMPUTER IP> -ClientId <MAC ADDRESS> -Description <DESSCRIPTION> -Name "COMPUTERNAME"
+Add-DhcpServerv4Reservation -ScopeId <SCOPE IP>-IPAddress <COMPUTER IP> -ClientId <MAC ADDRESS> -Description <DESSCRIPTION> -Name "COMPUTERNAME"
+Add-DhcpServerv4Reservation -ScopeId <SCOPE IP>-IPAddress <COMPUTER IP> -ClientId <MAC ADDRESS> -Description <DESSCRIPTION> -Name "COMPUTERNAME"

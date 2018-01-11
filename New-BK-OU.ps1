@@ -1,0 +1,1 @@
+﻿New-ADOrganizationalUnit -Name Spain -Path "OU=Burger King,OU=Kiosks,DC=tillsterkiosk,DC=com"

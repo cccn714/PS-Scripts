@@ -1,0 +1,1 @@
+aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids "i-0c715c6033bd822ef" "i-046812fe35afff20b" "i-0c78370831e6bed9a" --parameters '{"commands":["systemctl restart openvpn@server.service"],"executionTimeout":["3600"]}' --comment "Restart all openvpn services.. all nodes." --timeout-seconds 60 --region us-west-1

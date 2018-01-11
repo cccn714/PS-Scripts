@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\OpenVPN]
+"disconnect_on_suspend"="0"
+"config_dir"="C:\\Program Files\\OpenVPN\\config"
+"config_ext"="ovpn"
+"exe_path"="C:\\Program Files\\OpenVPN\\bin\\openvpn.exe"
+"log_dir"="C:\\Program Files\\OpenVPN\\log"
+"log_append"="0"
+"priority"="NORMAL_PRIORITY_CLASS"
+"log_viewer"="C:\\WINDOWS\\system32\\notepad.exe"
+"editor"="C:\\WINDOWS\\system32\\notepad.exe"
+"ovpn_admin_group"="OpenVPN Administrators"
+"disable_save_passwords"=dword:00000000
+@="C:\\Program Files\\OpenVPN"
+"allow_edit"="0"
+"allow_service"="1"
+"allow_password"="0"
+"allow_proxy"="0"
+"service_only"="1"
+"show_balloon"="0"
+"silent_connection"="1"
+"show_script_window"="0"
+"passphrase_attempts"="3"
+"connectscript_timeout"="15"
+"disconnectscript_timeout"="10"
+"preconnectscript_timeout"="10"

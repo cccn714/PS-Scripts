@@ -1,0 +1,13 @@
+select   
+v_R_System.Name0 as 'Computername',   
+Count(v_StateNames.Statename) as 'Required Updates'   
+from   
+v_StateNames,   
+v_Update_ComplianceStatusAll   
+Inner Join v_R_System On (v_R_System.ResourceID = v_Update_ComplianceStatusAll.ResourceID)   
+Inner Join v_UpdateInfo On (v_UpdateInfo.CI_ID = v_Update_ComplianceStatusAll.CI_ID)   
+where   
+v_StateNames.TopicType = 500 and   
+v_StateNames.StateID = v_Update_ComplianceStatusAll.Status and   
+v_StateNames.Statename = 'Update is required'   
+Group By v_R_System.Name0  
